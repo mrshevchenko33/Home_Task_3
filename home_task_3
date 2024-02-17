@@ -1,0 +1,13 @@
+number = int(input('Please enter a 5-digit positive integer: '))
+
+fifth_num = number // 10000
+fourth_num = (number // 1000) % 10
+third_num = (number // 100) % 10
+second_num = (number // 10) % 10
+first_num = number % 10
+
+
+reversed_number = first_num * 10000 + second_num * 1000 + third_num * 100 + fourth_num * 10 + fifth_num
+
+
+print(reversed_number)
